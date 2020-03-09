@@ -1,0 +1,35 @@
+html, body{
+  background-color: #f8f8ff;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h1{
+  padding: 0.75em;
+  margin: 0;
+  background-color: #10ac84;
+  color: #fff;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  border-bottom: 5px solid #333;
+}
+
+.contentWrapper{
+  padding: 3em;
+  text-align: center;  
+}
+
+footer{
+  background-color: #111111;
+  color: #fff;
+  height: 75px;
+  padding: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 5px solid #10ac84;
+}
+
+footer p{
+  margin: 0;
+}
