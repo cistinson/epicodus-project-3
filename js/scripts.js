@@ -2,6 +2,8 @@ $(document).ready(function() {
 
   $("#userSubmissionForm").submit(function(){
 
+    //The below is all back-end logic
+
     //Prevent default submission of form
     event.preventDefault();
 
@@ -40,15 +42,22 @@ $(document).ready(function() {
     //Input results array to placeholder paragraph with additional spacing
     resultsPlaceholder.text(finalResultsArray.join(", "));
 
+    //Hide submit buttton and show reset button
     $("#resetButton").show();
     $("#submitButton").hide();
 
   });
 
+  //End-user logic to reset form and placeholder text
+
   $("#resetButton").click(function(){
+    //Reset form values
     $("#userSubmissionForm").trigger("reset");
+    
+    //Rest placeholder text for results
     $("#resultsPlaceholder").text("Your results will appear here once you’ve selected a number");
 
+    //Hide reset button and show submit button
     $("#resetButton").hide();
     $("#submitButton").show();
   });
