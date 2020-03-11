@@ -19,9 +19,13 @@ h1{
   text-align: center;  
 }
 
-h2:first-child{
+h2{
   font-weight: bold;
   margin-bottom: 2em;
+}
+
+h2:last-of-type{
+  margin-bottom: 1em;
 }
 
 input{
@@ -29,21 +33,38 @@ input{
 }
 
 input, label{
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 #submitButton{
-  padding: 0.5em;
+  padding: 0.25em;
   background-color: #10ac84;
   color: #fff;
   border: 2px solid #fff;
   border-radius: 0.5em;
-  width: 100px;
-  height: 50px;
+  width: 120px;
+  height: 60px;
+  font-size: 1.25em;
 }
 
-#submitButton:focus{
-  border: none;
+#resetButton{
+  padding: 0.25em;
+  background-color: #d63031;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 0.5em;
+  width: 120px;
+  height: 60px;
+  font-size: 1.25em;
+}
+
+#submitButton:hover, #resetButton:hover{
+  border: 2px solid #333;
+  font-weight: bold;
+}
+
+#resultsPlaceholder{
+  margin-bottom: 2em;
 }
 
 form{
