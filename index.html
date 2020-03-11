@@ -11,13 +11,15 @@
   <body>
     <h1>Mr. Roboger&rsquo;s Neighborhood</h1>
     <div class="contentWrapper">
+      <h2>Hoping to create a random array of numbers and strings?<br /> Well, you&rsquo;ve come to the right place!</h2>
       <form id="userSubmissionForm">
-        <label>Input a number between 0 and 99:</label>
-        <input type="number" required>
-        <button type="submit">Submit</button>
+        <label>Input a number between 0 and 1000:</label><br />
+        <input type="number" required min="1" max="1000"><br />
+        <button type="submit" id="submitButton">Submit</button>
       </form>
       <h2>Results:</h2>
-      <p id="resultsPlaceholder"></p>
+      <p id="resultsPlaceholder">Your results will appear here once you&rsquo;ve selected a number</p>
+      <button type="button" id="resetButton">Reset</button>
     </div>
     <footer>
       <p>&copy; Stinson Design</p>
