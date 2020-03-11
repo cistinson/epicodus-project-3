@@ -19,6 +19,10 @@ h1{
   text-align: center;  
 }
 
+p, label{
+  font-size: 1.25em;
+}
+
 h2{
   font-weight: bold;
   margin-bottom: 2em;
