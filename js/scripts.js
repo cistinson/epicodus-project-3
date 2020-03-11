@@ -40,11 +40,17 @@ $(document).ready(function() {
     //Input results array to placeholder paragraph with additional spacing
     resultsPlaceholder.text(finalResultsArray.join(", "));
 
+    $("#resetButton").show();
+    $("#submitButton").hide();
+
   });
 
   $("#resetButton").click(function(){
     $("#userSubmissionForm").trigger("reset");
     $("#resultsPlaceholder").text("Your results will appear here once you’ve selected a number");
+
+    $("#resetButton").hide();
+    $("#submitButton").show();
   });
 
 });
