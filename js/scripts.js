@@ -48,7 +48,7 @@ $(document).ready(function() {
 
   });
 
-  //End-user logic to reset form and placeholder text
+  //Front-end user logic to reset form and placeholder text
 
   $("#resetButton").click(function(){
     //Reset form values
